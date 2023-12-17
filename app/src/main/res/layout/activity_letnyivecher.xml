@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#B0C4DE"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="130dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#1E90FF"
+        android:fontFamily="cursive"
+        android:text="На главную"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/button18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="130dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#1E90FF"
+        android:fontFamily="cursive"
+        android:text="Назад"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button17" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="231dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="16dp"
+        android:text="Летний вечер"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button18"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="354dp"
+        android:layout_height="317dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="68dp"
+        android:text="Последние лучи заката
+\nЛежат на поле сжатой ржи.
+\nДремотой розовой объята
+\nТрава некошенной межи.
+\nНи ветерка, ни крика птицы,
+\nНад рощей — красный диск луны,
+\nИ замирает песня жницы
+\nСреди вечерней тишины.
+\nЗабудь заботы и печали,
+\nУмчись без цели на коне
+\nВ туман и в луговые дали,
+\nНавстречу ночи и луне!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/pauseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="170dp"
+        android:backgroundTint="#1E90FF"
+        android:fontFamily="cursive"
+        android:onClick="play"
+        android:text="Слушать"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pauseButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#1E90FF"
+        android:fontFamily="cursive"
+        android:onClick="pause"
+        android:text="Пауза"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/stopButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="125dp"
+        android:backgroundTint="#DC143C"
+        android:fontFamily="cursive"
+        android:onClick="stop"
+        android:text="Стоп"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/button28"
+        app:layout_constraintEnd_toStartOf="@+id/button28"
+        app:layout_constraintStart_toEndOf="@+id/button18"
+        app:layout_constraintTop_toBottomOf="@+id/pauseButton" />
+
+    <Button
+        android:id="@+id/button28"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#1E90FF"
+        android:fontFamily="cursive"
+        android:text="Далее"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

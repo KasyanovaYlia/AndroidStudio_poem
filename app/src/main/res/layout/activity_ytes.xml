@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#B0C4DE"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="370dp"
+        android:layout_height="340dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="1dp"
+        android:text="Ночевала тучка золотая
+\nНа груди утеса-великана;
+\nУтром в путь она умчалась рано,
+\nПо лазури весело играя;
+\nНо остался влажный след в морщине
+\nСтарого утеса.Одиноко
+\nОн стоит, задумался глубоко,
+\nИ тихонько плачет он в пустыне."
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/playButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="130dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="#1E90FF"
+        android:fontFamily="cursive"
+        android:text="На главную"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#1E90FF"
+        android:fontFamily="cursive"
+        android:onClick="pause"
+        android:text="Пауза"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/stopButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="280dp"
+        android:backgroundTint="#1E90FF"
+        android:fontFamily="cursive"
+        android:onClick="play"
+        android:text="Слушать"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pauseButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="96dp"
+        android:backgroundTint="#DC143C"
+        android:backgroundTintMode="add"
+        android:fontFamily="cursive"
+        android:onClick="stop"
+        android:text="Стоп"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pauseButton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="123dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="362dp"
+        android:text="Утес"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/pauseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1E90FF"
+        android:text="Далее"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
